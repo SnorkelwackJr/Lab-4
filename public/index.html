@@ -4,20 +4,29 @@
 <head>
   <meta charset="utf-8" />
   <title>Vue REST</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
 </head>
 
 <body>
   <div id="app">
-    <h1>Select a City</h1>
+    <h1 id="header">Select a City</h1>
     <form v-on:keyup.prevent="fetchREST">
       <input type="text" v-model="prefix">
     </form>
-    <ul>
-      <li v-for="item in cities">
-        {{ item.name }}
-      </li>
-    </ul>
+    <div class="jumbotron">
+      <ul>
+        <li v-for="item in cities">
+          {{ item.name }}
+        </li>
+      </ul>
+    </div>
   </div>
+  
+  <footer>
+    <p>Github Repository: <a href="https://github.com/SnorkelwackJr/Lab-4">Lab 4</a></p>
+  </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
   <script src="javascripts/script.js"></script>
 </body>
