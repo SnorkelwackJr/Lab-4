@@ -1,8 +1,73 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: white;
+  
+  background: url(forest.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  background-color: white;
+  color: black;
+  margin: 50px 250px;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+  
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5em;
+}
+
+input {
+  border-radius: 5px;
 }
 
 a {
   color: #00B7FF;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+#header {
+    font-size: 4em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#header:before,
+#header:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+#header:after {
+    margin: 0 0 0 20px;
 }
